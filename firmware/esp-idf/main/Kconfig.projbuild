@@ -1,0 +1,67 @@
+menu "WiFi Tomography Node Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "your_wifi_ssid"
+        help
+            WiFi network name (SSID) to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "your_wifi_password"
+        help
+            WiFi password (WPA2-PSK).
+
+    config SERVER_IP
+        string "Server IP Address"
+        default "192.168.1.100"
+        help
+            IP address of the WiFi tomography server.
+
+    config SERVER_PORT
+        int "Server UDP Port"
+        default 5000
+        help
+            UDP port for sending HELLO/HEARTBEAT/CSI data.
+
+    config TRIGGER_PORT
+        int "Trigger Listen Port"
+        default 5001
+        help
+            UDP port for receiving TRIGGER commands.
+
+    config BURST_PORT
+        int "Burst Broadcast Port"
+        default 5555
+        help
+            UDP port for sending burst packets during TX mode.
+
+    config WIFI_CHANNEL
+        int "Preferred WiFi Channel"
+        range 0 13
+        default 11
+        help
+            Preferred WiFi channel for CSI consistency (0 = auto).
+            All nodes should use the same channel for best results.
+
+    config BURST_COUNT
+        int "Burst Packet Count"
+        range 10 500
+        default 100
+        help
+            Number of broadcast packets to send during TX burst.
+
+    config BURST_DELAY_US
+        int "Burst Inter-Packet Delay (microseconds)"
+        range 0 10000
+        default 500
+        help
+            Delay between burst packets in microseconds.
+
+    config DEBUG_VERBOSE
+        bool "Enable verbose debug logging"
+        default y
+        help
+            Enable detailed logging for debugging connectivity issues.
+
+endmenu

@@ -1,0 +1,16 @@
+# =============================================================================
+# ESP32 WiFi CSI TDMA System - Python Dependencies
+# =============================================================================
+
+# Core - Required
+numpy>=1.21.0
+
+# Optional - Data persistence and analysis
+# Uncomment if you want to save/analyze CSI data
+# pandas>=1.3.0
+# scipy>=1.7.0
+
+# Optional - REST API server
+# Uncomment to add HTTP API endpoints
+# fastapi>=0.68.0
+# uvicorn>=0.15.0

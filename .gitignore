@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ESP-IDF build artifacts
+firmware/esp-idf/build/
+firmware/esp-idf/sdkconfig
+firmware/esp-idf/sdkconfig.old
+
+# Data files (too large for git)
+*.jsonl
+*.jsonl.gz
+*.parquet
+data/
+
+# Results (regeneratable)
+results/
+figures/
+*.png
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

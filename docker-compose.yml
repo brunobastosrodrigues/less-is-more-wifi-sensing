@@ -1,0 +1,61 @@
+# =============================================================================
+# ESP32 WiFi CSI TDMA System - Docker Compose
+# =============================================================================
+#
+# Quick start:
+#   docker compose up --build
+#
+# CRITICAL: network_mode: "host" is REQUIRED for UDP communication with ESP32
+# nodes. This allows the container to:
+#   1. Receive UDP packets from ESP32 nodes on port 5000
+#   2. Broadcast trigger packets to all nodes on port 5001
+#   3. See the actual IP addresses of ESP32 devices
+#
+# Without host networking, UDP broadcasts won't reach the ESP32 nodes.
+# =============================================================================
+
+version: '3.8'
+
+services:
+  tdma-server:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: esp32_csi_tdma
+    restart: unless-stopped
+
+    # CRITICAL: Host networking required for UDP/IoT communication
+    # This allows direct communication with ESP32 nodes on the local network
+    network_mode: "host"
+
+    # Volume mounts for data persistence
+    volumes:
+      # CSI data storage (persists collected data)
+      - ./data/csi:/app/csi_data
+
+      # Physical map for node positions (optional)
+      # Format: MAC,x,y,z per line (e.g., "1C:69:7A:AB:CD:EF,0.0,0.0,1.5")
+      - ./physical_map.txt:/app/physical_map.txt:ro
+
+    # Environment variables
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CSI_DATA_DIR=/app/csi_data
+
+      # Timing configuration (override defaults)
+      # - SLOT_DURATION_MS=20
+      # - BURSTS_PER_TRIGGER=10
+      # - CYCLE_DELAY_MS=5
+
+      # Health monitoring (optional tuning)
+      # - HEARTBEAT_TIMEOUT_S=30.0
+      # - HEARTBEAT_CHECK_S=5.0
+      # - NODE_REMOVAL_S=300.0
+
+    # Resource limits (adjust based on your hardware)
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 128M
