@@ -1,4 +1,4 @@
-# Less is More
+# Less is More - ESP32-C3 WiFi CSI Sensing
 
 We empirically show the 'Less is More' dilution effect, showing that adding nodes introduces tradeoffs where bandwidth saturation and TDMA limitations force sampling rates below the Nyquist threshold. Strategic and sparse sensor placement is superior to dense meshes/complex algorithimic solutions.
 
