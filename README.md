@@ -1,6 +1,6 @@
-# ESP32 WiFi CSI TDMA System
+# Less is More
 
-A ring-based Time Division Multiple Access (TDMA) system for collecting WiFi Channel State Information (CSI) using ESP32-C3 microcontrollers.
+We empirically show the 'Less is More' dilution effect, showing that adding nodes introduces tradeoffs where bandwidth saturation and TDMA limitations force sampling rates below the Nyquist threshold. Strategic and sparse sensor placement is superior to dense meshes/complex algorithimic solutions.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a0301509-113c-4c70-9528-9eec0db3c313" width="400">
