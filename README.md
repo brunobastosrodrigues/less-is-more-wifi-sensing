@@ -2,6 +2,11 @@
 
 A ring-based Time Division Multiple Access (TDMA) system for collecting WiFi Channel State Information (CSI) using ESP32-C3 microcontrollers.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/83138851-08bf-4e55-ab6d-0e0ac7f56949" width="400">
+</p>
+
+
 ## Overview
 
 This project provides a complete system for distributed WiFi sensing using CSI data. It implements:
