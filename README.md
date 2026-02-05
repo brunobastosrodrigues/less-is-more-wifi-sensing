@@ -36,6 +36,8 @@ This project provides a complete system for distributed WiFi sensing using CSI d
 │                                                                │
 └────────────────────────────────────────────────────────────────┘
 ```
+## Dataset
+Available on Zenodo: https://zenodo.org/records/18486250
 
 ## Features
 
