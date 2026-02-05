@@ -37,7 +37,10 @@ This project provides a complete system for distributed WiFi sensing using CSI d
 └────────────────────────────────────────────────────────────────┘
 ```
 ## Dataset
-Available on Zenodo: https://zenodo.org/records/18486250
+
+<img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/111df159-6f22-4302-9f2f-52b609481472" />
+
+https://doi.org/10.5281/zenodo.18486250
 
 ## Features
 
@@ -265,21 +268,6 @@ The evaluation includes:
 
 MIT License - see LICENSE file for details.
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@inproceedings{anonymous2026lessismore,
-  title={Less is More: The Dilution Effect in Multi-Link Wireless Sensing},
-  author={Anonymous},
-  booktitle={Under Review},
-  year={2026},
-  note={Paper under double-blind review}
-}
-```
-
-**Note:** Citation will be updated with full author details upon paper acceptance.
 
 ## Acknowledgments
 
