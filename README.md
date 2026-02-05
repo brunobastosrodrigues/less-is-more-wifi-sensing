@@ -223,20 +223,6 @@ All packets include CRC32 validation.
 | 5001 | Server → Nodes | TRIGGER commands (broadcast) |
 | 5555 | Node → Nodes | Burst packets (broadcast) |
 
-## Use Cases
-
-This system is designed for:
-
-- **Presence Detection**: Binary occupied/empty classification
-- **Zone Occupancy**: Room quadrant localization
-- **Motion State**: Moving vs. stationary detection
-- **Breathing Detection**: Respiratory rate monitoring (stationary subjects)
-
-**Not suitable for** (requires >20 Hz sampling):
-- Gesture recognition
-- Centimeter-level tracking
-- Multi-person tracking in same zone
-
 ## Reproducing Paper Results
 
 See `analysis/REPRODUCIBILITY.md` for detailed instructions. Quick start:
@@ -270,8 +256,3 @@ The evaluation includes:
 
 MIT License - see LICENSE file for details.
 
-
-## Acknowledgments
-
-- ESP-IDF WiFi CSI API
-- Seeed XIAO ESP32-C3 hardware platform
