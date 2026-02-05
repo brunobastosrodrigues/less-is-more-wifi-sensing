@@ -38,6 +38,8 @@ This project provides a complete system for distributed WiFi sensing using CSI d
 ```
 ## Dataset
 
+Dataset collected from a 9-node ESP32-C3 mesh network deployed in a 5×4 meter residential environment. The dataset comprises over 300 hours of continuous recordings across 72 directional RF links, totaling 1.6 million time windows with semi-automatic ground truth labels for presence, activity, and occupancy count.
+
 <img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/111df159-6f22-4302-9f2f-52b609481472" />
 
 https://doi.org/10.5281/zenodo.18486250
