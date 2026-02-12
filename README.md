@@ -44,6 +44,22 @@ Dataset collected from a 9-node ESP32-C3 mesh network deployed in a 5×4 meter r
 
 https://doi.org/10.5281/zenodo.18486250
 
+## Paper
+[![arXiv](https://img.shields.io/badge/arXiv-2602.10823-b31b1b.svg)](https://arxiv.org/abs/2602.10823)
+
+If you find this code or dataset useful for your research, please cite our paper:
+```bibtex
+@misc{rodrigues2026moredilutioneffectmultilink,
+      title={Less is More: The Dilution Effect in Multi-Link Wireless Sensing}, 
+      author={Bruno Rodrigues and Karim Khamaisi},
+      year={2026},
+      eprint={2602.10823},
+      archivePrefix={arXiv},
+      primaryClass={cs.NI},
+      url={[https://arxiv.org/abs/2602.10823](https://arxiv.org/abs/2602.10823)}, 
+}
+```
+
 ## Features
 
 - **Scalable**: Supports 2-16 ESP32-C3 nodes
