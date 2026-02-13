@@ -49,7 +49,7 @@ https://doi.org/10.5281/zenodo.18486250
 
 If you find this code or dataset useful for your research, please cite our paper:
 ```bibtex
-@misc{rodrigues2026moredilutioneffectmultilink,
+@misc{rodrigues2026lessismore,
       title={Less is More: The Dilution Effect in Multi-Link Wireless Sensing}, 
       author={Bruno Rodrigues and Karim Khamaisi},
       year={2026},
